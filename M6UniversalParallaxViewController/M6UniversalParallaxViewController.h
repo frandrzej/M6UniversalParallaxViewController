@@ -25,4 +25,8 @@
 - (void)setParallaxViewContainerRestingHeight:(CGFloat)parallaxViewContainerRestingHeight;
 - (CGFloat)parallaxViewContainerRestingHeight;
 
+
+//if ASTableView, set the asyncDelegate and call this manually
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end

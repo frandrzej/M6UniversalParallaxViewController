@@ -32,10 +32,10 @@
     
     [self.parallaxContainerView setClipsToBounds:YES];
     
-    self.scrollView.delegate = self;
+    if(![self.scrollView isKindOfClass:NSClassFromString(@"ASTableView")])
+        self.scrollView.delegate = self;
     
     self.parallaxViewContainerRestingHeight = self.parallaxContainerViewHeightLayoutConstraint.constant;
-    
 }
 
 ////////////////////////////////////////////////////////////////////////
